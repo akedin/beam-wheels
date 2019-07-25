@@ -84,7 +84,7 @@ before_install:
     - before_install
 
 install:
-    - wget $STAGING/$ZIP_FILE
+    - wget $STAGING/$ZIP_FILE --no-check-certificate
     - unzip $ZIP_FILE
 
 # VERSION and RC setup in travis build console > More options > Settings > Environment Variables with 'Display value in build log' enabled.
